@@ -40,47 +40,37 @@ public class Main {
     }
 
     static void searchStudent() {
-
-
-    }
-  
-   static void deleteStudent() {
-        if (numEstudiantes == 0) {
-            System.out.println("No hay estudiantes registrados.");
-            return;
-        }
-    
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese la matrícula del estudiante a eliminar: ");
-        String matricula = scanner.nextLine();
-    
-        int index = -1;
-        for (int i = 0; i < numEstudiantes; i++) {
-            if (estudiantes[i] != null && estudiantes[i].matricula.equals(matricula)) {
-                index = i;
+
+        System.out.println("Teclee la Matrícula del estudiante que desea buscar: ");
+        String estudiantebuscado = scanner.nextLine();
+        int estaen = -1;
+        for (int x = 0; x <= estudiantes.length-1; x++) {
+            if (estudiantes[x] == null) { 
+                continue; 
+            }
+            if (estudiantes[x].matricula.equals(estudiantebuscado)) { // .equals sirve como funcion de comparacion en un string
+                estaen = x;
                 break;
             }
         }
-    
-        if (index == -1) {
-            System.out.println("No se encontró un estudiante con esa matrícula.");
-            return;
+        if (estaen > -1) {
+            System.out.println("--------------------------------------------");
+            System.out.println("Nombre: " + estudiantes[estaen].nombre);
+            System.out.println("Edad: " + estudiantes[estaen].edad);
+            System.out.println("Matricula: " + estudiantes[estaen].matricula);
+            System.out.println("Carrera: " + estudiantes[estaen].carrera);
+            System.out.println("--------------------------------------------");
         }
-    
-        // Desplazar los elementos para evitar huecos en la lista
-        for (int i = index; i < numEstudiantes - 1; i++) {
-            estudiantes[i] = estudiantes[i + 1];
+        else {
+            System.out.println("No se encontro el estudiante");
         }
-    
-        // Eliminar la última referencia y actualizar el contador
-        estudiantes[numEstudiantes - 1] = null;
-        numEstudiantes--;
-    
-        System.out.println("Estudiante eliminado con éxito.");
 
     }
 
-  
+    static void deleteStudent() {
+
+    }
 
     public static void main(String[] args) {
         menu();
