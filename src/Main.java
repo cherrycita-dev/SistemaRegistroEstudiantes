@@ -40,7 +40,31 @@ public class Main {
     }
 
     static void searchStudent() {
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Teclee la Matrícula del estudiante que desea buscar: ");
+        String estudiantebuscado = scanner.nextLine();
+        int estaen = -1;
+        for (int x = 0; x <= estudiantes.length-1; x++) {
+            if (estudiantes[x] == null) { 
+                continue; 
+            }
+            if (estudiantes[x].matricula.equals(estudiantebuscado)) { // .equals sirve como funcion de comparacion en un string
+                estaen = x;
+                break;
+            }
+        }
+        if (estaen > -1) {
+            System.out.println("--------------------------------------------");
+            System.out.println("Nombre: " + estudiantes[estaen].nombre);
+            System.out.println("Edad: " + estudiantes[estaen].edad);
+            System.out.println("Matricula: " + estudiantes[estaen].matricula);
+            System.out.println("Carrera: " + estudiantes[estaen].carrera);
+            System.out.println("--------------------------------------------");
+        }
+        else {
+            System.out.println("No se encontro el estudiante");
+        }
 
     }
   
