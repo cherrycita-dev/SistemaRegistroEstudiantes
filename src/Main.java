@@ -41,11 +41,46 @@ public class Main {
 
     static void searchStudent() {
 
-    }
-
-    static void deleteStudent() {
 
     }
+  
+   static void deleteStudent() {
+        if (numEstudiantes == 0) {
+            System.out.println("No hay estudiantes registrados.");
+            return;
+        }
+    
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese la matrícula del estudiante a eliminar: ");
+        String matricula = scanner.nextLine();
+    
+        int index = -1;
+        for (int i = 0; i < numEstudiantes; i++) {
+            if (estudiantes[i] != null && estudiantes[i].matricula.equals(matricula)) {
+                index = i;
+                break;
+            }
+        }
+    
+        if (index == -1) {
+            System.out.println("No se encontró un estudiante con esa matrícula.");
+            return;
+        }
+    
+        // Desplazar los elementos para evitar huecos en la lista
+        for (int i = index; i < numEstudiantes - 1; i++) {
+            estudiantes[i] = estudiantes[i + 1];
+        }
+    
+        // Eliminar la última referencia y actualizar el contador
+        estudiantes[numEstudiantes - 1] = null;
+        numEstudiantes--;
+    
+        System.out.println("Estudiante eliminado con éxito.");
+
+    }
+
+  
 
     public static void main(String[] args) {
         menu();
