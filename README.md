@@ -32,13 +32,25 @@ Este proyecto es un programa en Java que permite gestionar un listado de estudia
 
 A continuación, se presentan algunas capturas de pantalla del programa en ejecución:
 
-Menú principal:
-<img src="Assets/" alt="" width="350">  
+Menú principal:<br><br>
+<img src="Assets P2/menu.jpg" alt="" width="350">  
 
-Agregando un estudiante:
+Agregando un estudiante: <br> 
+<img src="Assets P2/agregar 2.jpg" alt="50" width=""> 
+<img src="Assets P2/agregar.jpg" alt="" width="350"> 
+
+Listado de estudiantes: <br> <br>
+<img src="Assets P2/mostrar.jpg" alt="" width="350"> 
 
 
-Listado de estudiantes:
+Buscar un estudiante: <br> <br>
+<img src="Assets P2/buscar.jpg" alt="" width="450"> 
+
+Eliminar un estudiante: <br> <br>
+<img src="Assets P2/eliminar.jpg" alt="" width="650"> 
+
+
+
 ## Código Principal
 El código principal del programa se encuentra en `Main.java`, que contiene la lógica para manejar la gestión de estudiantes.
 
