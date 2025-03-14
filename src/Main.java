@@ -36,7 +36,18 @@ public class Main {
     }
 
     static void showStudents() {
-
+        if (numEstudiantes == 0){
+            System.out.println ("No hay estudiantes registrados.");
+        } else {
+            System.out.println("\n--- Lista de Estudiantes ---");
+            for (int i = 0; i < numEstudiantes; i++){
+                System.out.println("Nombre: " + estudiantes[i].nombre);
+                System.out.println("Edad: " + estudiantes[i].edad);
+                System.out.println("Matricula: " + estudiantes[i].matricula);
+                System.out.println("Carrera: " + estudiantes[i].carrera);
+                System.out.println("-----------------------------");
+            }
+        }
     }
 
     static void searchStudent() {
