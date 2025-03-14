@@ -49,7 +49,11 @@ Buscar un estudiante: <br> <br>
 Eliminar un estudiante: <br> <br>
 <img src="Assets P2/eliminar.jpg" alt="" width="650"> 
 
+Listado de estudiantes después de eliminar un alumno: <br> <br>
+<img src="Assets P2/mostrar2.jpg" alt="" width="350"> 
 
+Buscar un estudiante eliminado: <br> <br>
+<img src="Assets P2/buscar2.jpg" alt="" width="450"> 
 
 ## Código Principal
 El código principal del programa se encuentra en `Main.java`, que contiene la lógica para manejar la gestión de estudiantes.
