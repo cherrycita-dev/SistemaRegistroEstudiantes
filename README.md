@@ -27,7 +27,18 @@ Este proyecto es un programa en Java que permite gestionar un listado de estudia
    java Main
    ```
 4. Sigue las instrucciones del menú para gestionar estudiantes.
+   
+## Capturas de Pantalla
 
+A continuación, se presentan algunas capturas de pantalla del programa en ejecución:
+
+Menú principal:
+<img src="Assets/" alt="" width="350">  
+
+Agregando un estudiante:
+
+
+Listado de estudiantes:
 ## Código Principal
 El código principal del programa se encuentra en `Main.java`, que contiene la lógica para manejar la gestión de estudiantes.
 
