@@ -16,7 +16,7 @@ Este proyecto es un programa en Java que permite gestionar un listado de estudia
 ## Uso
 1. Clona este repositorio en tu máquina local:
    ```sh
-   git clone https://github.com/tu-usuario/gestor-estudiantes.git
+   git clone https://github.com/cherrycita-dev/SistemaRegistroEstudiantes
    ```
 2. Compila el código fuente con:
    ```sh
